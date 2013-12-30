@@ -3,7 +3,7 @@ FastAuth Library v1.0
 
 FastAuth - это PHP библиотека позволяющая пользователю не заполняя на сайте учётных
 данных зарегистрироваться или войти в систему используя свой профиль с Facebook, Google, PayPal,
-Windows Live, ВКонтакте, Mail.ru, Bitly, Foursquare, GitHub, Одноклассников или Yandex.
+Microsoft Live, LinkedIn, ВКонтакте, Mail.ru, Bitly, Foursquare, GitHub, Одноклассников или Yandex.
 
 Для корректной работы библиотеки требуется PHP 5.3 и старше.
 
@@ -63,11 +63,12 @@ Facebook, если пользователь подтвердил согласи�
 [Mail.ru](http://api.mail.ru/sites/my/add)  
 [Одноклассники](http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=13992188)  
 [Yandex](https://oauth.yandex.ru/client/new)  
-[Windows Live](https://manage.dev.live.com/AddApplication.aspx?tou=1)  
+[Microsoft Live](https://manage.dev.live.com/AddApplication.aspx?tou=1)  
 [Bitly](https://bitly.com/a/create_oauth_app)  
 [Foursquare](https://ru.foursquare.com/developers/register)  
 [GitHub](https://github.com/settings/applications/new)  
 [PayPal](https://devportal.x.com/sdm/set_app/Production)  
+[LinkedIn](https://www.linkedin.com/secure/developer)  
 
 Опции
 -----
@@ -139,5 +140,11 @@ Facebook, если пользователь подтвердил согласи�
         'secret' => '<CONSUMER_SECRET>',
         'redirect_uri' => '<REDIRECT_URI>',
         'public_link' => '',
+    ),
+    'linkedin' => array(
+        'client_id' => '<CONSUMER_KEY>',
+        'secret' => '<CONSUMER_SECRET>',
+        'redirect_uri' => '<REDIRECT_URI>',
+        'public_link' => 'https://www.linkedin.com/uas/oauth2/authorization?response_type=code&client_id=<CONSUMER_KEY>&redirect_uri=<REDIRECT_URI>&state=<STATE>',
     ),
 
